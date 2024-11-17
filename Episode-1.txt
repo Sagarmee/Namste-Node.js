@@ -1,0 +1,36 @@
+1 - What is Node.js ?
+Ans - Node.js is a cross-platform, opensource javascript runtime enviroment, it is run on windows, macos,linux and more.
+      Node.js run on chrome v8 javascript engine and excute javascript code outside the web browser.
+
+--> javascript run outside the web browser means, tradionally javacript is top of web browser but with the help 
+    of node js javascript run desktop app, embedded systems. This is why phrase is say "Run Javascript Everywhere"
+
+--> Node.js features an event-driven architecture and run asynchronous input/output (non-blocking I/O)
+
+---------------------------------------------------------------------------------------------------------------
+--> javascript introduced 2009 by ryan daul.
+--> javascript maintain by openjs foundation.
+--> To run js we always need js engine.
+--> everywhere we write js code, there is an js engine, that excute the code.
+
+History of Node.js
+
+2009: Ryan Dahl started developing Node.js initially using the SpiderMonkey JavaScript engine (from Firefox). However, within two days, he switched to the V8 engine (from Chrome) and continued using it without looking back. Ryan worked independently until Joyent, a company working on a similar project, hired him to collaborate on Node.js development.
+
+2010: The Node Package Manager (npm) was introduced, simplifying the process of sharing and managing Node.js libraries.
+
+Initially, Node.js was named web.js, but Ryan changed the name to Node.js to emphasize its potential beyond server-side applications, expanding to various other uses.
+
+During that period, the Apache HTTP server was dominant. However, Apache's blocking I/O approach posed performance limitations. Ryan introduced Node.js with non-blocking I/O, allowing it to handle multiple requests with fewer threads and improved scalability.
+
+Pre-2011: Node.js could only run on Linux and macOS.
+
+2011: Joyent and Microsoft collaborated to enable Node.js to run on Windows.
+
+2012: Isaac Schlueter managed Node.js development.
+
+2014: A fork of Node.js was created, known as io.js, managed by a group of developers who had differing opinions on Node.js governance. This caused some controversy.
+
+2015: Node.js and io.js merged back together to form the Node.js Foundation, bringing the two projects under a single organization.
+
+2019: The JS Foundation and the Node.js Foundation merged to create the OpenJS Foundation, which now oversees and maintains Node.js.
