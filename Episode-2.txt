@@ -1,0 +1,36 @@
+1 - what is server ?
+Ans - Server is a computer or machine which is located remotely.
+      Server is provide resources to the client over network.
+
+javascript is only run on web-browser so js is use for client side development. but if developer want to communicate with server or fetching the resource from the server they 
+need different programing language to communicate with server,but node.js gives functionality to run javascript on server.so now js can be use for client-side and server-side programing.
+js now can run outside of the web-browser. 
+
+with the help of node.js developer dont't need to learn both language for front-end and back-end.
+
+2 - What is V8?
+Ans - V8 is javascript engine which is run on chrome. v8 written in c++ application, V8 can be embedded into any C++ application.
+
+The process works as follows: JavaScript code is executed by V8 (written in C++), which then compiles it down to machine code that the computer can execute.
+v8 engine, spider monkey, and other browser enginer follows Ecmascript standards.
+
+so , v8 engines has to follow this ECMA standards. and node.js has v8
+engines, but node.js also has some superpowers, such as api calls on servers,
+which make it more powerful than v8 engines alone, which cannot do
+database connections, api calls, etc. because of ECMA standards. and this is
+known as the JS runtime.
+
+
+3 - What is Ecmascript
+Ans - Ecmascript is standards or rules for javascript which is defined by particular community. 
+
+
+NODEJS is a c++ application with v8 embedded into it
+
+
+
+--> Undestand How computer undestand the javascript. 
+
+
+- On the top of we code into js and v8 engine excute that code. v8 engine is written in c++ which is convert into machine code and low-level langaguge and then
+assembler convert that low level into binary code and understand the computer.
