@@ -1,0 +1,57 @@
+--> Every project has one main file.
+
+1 - what is require ?
+Ans - If we want to use one module to another module we can use require.
+
+    Example = require("./demo.js")
+    example2 = require("./demo")
+
+-> We can not access private varible and function from the othere module.
+-> by default module is protected theie variable and function.
+
+-> If we want to use their variable and function into another module we have to explicitly export that function and 
+varible of their module.
+-> with the help of module.exports we can export 
+
+    example = module.exports = {
+        calcualtesum : calcualtesum
+        name : name,
+        gender : gender
+    }
+
+    another way, 
+
+    module.exports = {
+        calcualtesum,
+        name, 
+        gender
+    }
+
+---------------------------------------
+
+Two Modules were used in the node.js 
+1 - common js module - (cjs)
+2 - es module - (mjs, ec6 esm)
+
+1 - commonjs module ?
+--> By default node.js used commonjs module.
+example - module.export = {}
+-> it is older way to exporting the module.
+-> it used in sync way
+-> it used in non-stric mode.
+    -> non-stric mode which means you don't have to write some of the standard.
+        Example -> without using varible like var, const, let we can used direct varible name and run the program.
+
+2 - es module
+--> it is a standard way to using this module 
+example = export const calcualtesum and import {calcualtesum} from "./sum.js"
+-> it is a new way to export the function 
+-> it used in asyn way
+-> it used in stric mode. 
+-> react.js by default us es module 
+
+
+way to doing es module below steps
+--> create package.json file 
+--> create object
+--> create "type" key and write the "module" by default it is commonjs
