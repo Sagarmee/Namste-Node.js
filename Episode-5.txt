@@ -1,0 +1,48 @@
+Episode - 5 - Diving into Node.js github repo
+
+Every Module wraps inside the function and the function is called IIFE.
+
+1 - What is IIFE ?
+Ans - Immediate invoked function expression.it will give privacy of varible and function of there module.
+
+example of IIFE - 
+
+(function (){
+    console.log("it is a immediate function expressions")
+}())
+
+when require function is used node.js create function and all the function and varible of particular module wraps inside the function and then immediate invoked it. 
+
+-> what happend when require function is used below is the example.
+
+(function () {
+    function calsum(a,b){
+        console.log(a + b);
+    }
+
+    module.export = {calsum}
+}())
+
+-> node.js pass the parameter of module and require into IIFE function.
+
+(function (module, require) {
+    function calsum(a,b){
+        console.log(a + b);
+    }
+
+    module.export = {calsum}
+}())
+
+
+5. steps mecanism for require.
+
+what happend when we write reqire function ?
+
+1 - resolving the module - it means that it will check the module path like - localpath, can be json, there can be node:util, there can be mulitple path
+2 - loading the module - it loading the file content accrording to file type. suppose file type is json, node module or local module.
+3 - it wraps inside the iife - 
+4 - code evaluation and in this steps only require and module.exports is return
+5 - caching
+
+there are module used in the mulitiple module so node.js is not apply same mecanism for the all module which is used in other module node.js cache the moudle at first time 
+and when use other file it will fetch from the caching. 
